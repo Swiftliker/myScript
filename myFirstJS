@@ -1,0 +1,47 @@
+var years = prompt('Сколько вам лет?');
+
+		function yourYears() {
+		if (years === null) {
+			alert('До свидания!');
+			return;
+		}
+		else if (years == 0) {
+			alert('До свидания!');
+		}
+		else if (years < 18) {
+			alert("Вы слишком молоды!");
+			return;
+		}
+		else if (years => 18) {
+			alert("Отлично!");
+			yourName();
+			myTest();
+		}
+		}
+
+		yourYears();
+
+		function yourName () {
+			var name = prompt('Как вас зовут?');
+			if (name === null) {
+				alert('До свидания!');
+				return;
+			}
+			else if (name == 0) {
+			    alert('До свидания!');
+		    }
+			else if (name !== null) {
+				alert('Отличное имя, ' + name + '!');
+			}
+		}
+		
+		function myTest () {
+		  var test = confirm('Хотите ли вы пройти тест, посвящённый моему сайту?')
+		  if (test == true) {
+		    alert('Тогда перейдите по этой ссылке:');
+		  }
+		  else if (test == false) {
+			  alert('До свидания!');
+			  return;
+		  }
+		}
